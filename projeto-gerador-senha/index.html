@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Gerador de senhas, gerador de password" />
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Gerador de Senha</h1>
+
+    <main>
+      <section class="container-top">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input
+          id="slider"
+          class="slider"
+          type="range"
+          min="5"
+          max="25"
+          value="10"
+        />
+
+        <button id="btn" class="button-cta">Gerar senha</button>
+      </section>
+      <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">123456789</span>
+        <div class="container-copy">
+          <span id="copia">Clique na senha para copiar.</span>
+          <span class="material-icons-outlined icon-copy">
+            content_copy
+            </span>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
